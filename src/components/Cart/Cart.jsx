@@ -7,7 +7,6 @@ import { Link, useLocation } from "react-router-dom";
 const Cart = ({cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart}) => {
     const classes = useStyles();
 
-    console.log(cart)
     const renderEmptyCart = () => (
         <Typography variant="subtitle1">V košíku nemáte žádné zboží,
          <Link className={classes.link} to="/">zde můžete začít nakupovat</Link>!

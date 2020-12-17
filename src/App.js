@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Products, NavBar, Cart, Checkout } from "./components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+
 import { commerce } from "./lib/commerce";
 
 const App = () => {
@@ -53,6 +54,7 @@ const App = () => {
     fetchCart();
   }, []);
 
+  console.log(cart)
   return (
     <Router>
       <div>
