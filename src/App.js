@@ -56,7 +56,7 @@ const App = () => {
 
   console.log(cart)
   return (
-    <Router>
+    <Router> 
       <div>
         <NavBar totalItems={cart.total_items} />
         <Switch>
